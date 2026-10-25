@@ -79,6 +79,124 @@ The script checks that both input files exist before beginning the analysis. If 
 
 The script reads the administrative units listed in Sheet 5 of the Table 5 workbook. Rows labelled `CS4` retain that classification; the remaining Sahvaran observations are classified as `NE5`, corresponding to the `N32` entries in the supplied workbook.
 
+
+The 79 first-level administrative units identified in Table 5 are classified as follows.
+
+#### CS4 units (44)
+
+| # | Country | Table 5 unit |
+| --- | --- | --- |
+| 1 | Burkina Faso | Boucle du Mouhoun |
+| 2 | Burkina Faso | Cascades |
+| 3 | Burkina Faso | Centre |
+| 4 | Burkina Faso | Centre-Est |
+| 5 | Burkina Faso | Centre-Nord |
+| 6 | Burkina Faso | Centre-Ouest |
+| 7 | Burkina Faso | Centre-Sud |
+| 8 | Burkina Faso | Est |
+| 9 | Burkina Faso | Hauts-Bassins |
+| 10 | Burkina Faso | Nord |
+| 11 | Burkina Faso | Plateau Central |
+| 12 | Burkina Faso | Sahel |
+| 13 | Burkina Faso | Sud-Ouest |
+| 14 | Mali | Bamako |
+| 15 | Mali | Gao |
+| 16 | Mali | Kayes |
+| 17 | Mali | Kidal |
+| 18 | Mali | Koulikoro |
+| 19 | Mali | Mopti |
+| 20 | Mali | Sikasso |
+| 21 | Mali | Ségou |
+| 22 | Mali | Timbuktu |
+| 23 | Mauritania | Adrar |
+| 24 | Mauritania | Assaba |
+| 25 | Mauritania | Brakna |
+| 26 | Mauritania | Dakhlet Nouadhibou |
+| 27 | Mauritania | Gorgol |
+| 28 | Mauritania | Guidimaka |
+| 29 | Mauritania | Hosh ech Chargui |
+| 30 | Mauritania | Hosh el Gharbi |
+| 31 | Mauritania | Nouakchott Nord |
+| 32 | Mauritania | Nouakchott Ouest |
+| 33 | Mauritania | Nouakchott Sud |
+| 34 | Mauritania | Tagant |
+| 35 | Mauritania | Tiris Zemmour & Inchiri |
+| 36 | Mauritania | Trarza |
+| 37 | Niger | Agadez |
+| 38 | Niger | Diffa |
+| 39 | Niger | Dosso |
+| 40 | Niger | Maradi |
+| 41 | Niger | Niamey |
+| 42 | Niger | Tahoua |
+| 43 | Niger | Tillaberi |
+| 44 | Niger | Zinder |
+
+#### NE5 units (35)
+
+| # | Country | Table 5 unit |
+| --- | --- | --- |
+| 1 | Benin | Alibori |
+| 2 | Benin | Atacora |
+| 3 | Benin | Borgou |
+| 4 | Benin | Donga |
+| 5 | Côte d'Ivoire | Denguélé |
+| 6 | Côte d'Ivoire | Savanes |
+| 7 | Côte d'Ivoire | Vallée du Bandama |
+| 8 | Côte d'Ivoire | Yamoussoukro |
+| 9 | Côte d'Ivoire | Zanzan |
+| 10 | Ghana | North East |
+| 11 | Ghana | Northern |
+| 12 | Ghana | Upper East |
+| 13 | Ghana | Upper West |
+| 14 | Nigeria | Adamawa |
+| 15 | Nigeria | Bauchi |
+| 16 | Nigeria | Benue |
+| 17 | Nigeria | Borno |
+| 18 | Nigeria | FCT |
+| 19 | Nigeria | Gombe |
+| 20 | Nigeria | Jigawa |
+| 21 | Nigeria | Kaduna |
+| 22 | Nigeria | Kano |
+| 23 | Nigeria | Katsina |
+| 24 | Nigeria | Kebbi |
+| 25 | Nigeria | Kogi |
+| 26 | Nigeria | Kwara |
+| 27 | Nigeria | Nasarawa |
+| 28 | Nigeria | Niger |
+| 29 | Nigeria | Plateau |
+| 30 | Nigeria | Sokoto |
+| 31 | Nigeria | Taraba |
+| 32 | Nigeria | Yobe |
+| 33 | Nigeria | Zamfara |
+| 34 | Togo | Kara |
+| 35 | Togo | Savanes |
+
+#### Administrative capitals (8)
+
+| # | Country | Table 5 unit |
+| --- | --- | --- |
+| 1 | Burkina Faso | Centre |
+| 2 | Côte d'Ivoire | Yamoussoukro |
+| 3 | Mali | Bamako |
+| 4 | Mauritania | Nouakchott Nord |
+| 5 | Mauritania | Nouakchott Ouest |
+| 6 | Mauritania | Nouakchott Sud |
+| 7 | Niger | Niamey |
+| 8 | Nigeria | FCT |
+
+#### Major commercial capitals (6)
+
+| # | Country | Table 5 unit |
+| --- | --- | --- |
+| 1 | Benin | Borgou |
+| 2 | Ghana | Northern |
+| 3 | Niger | Maradi |
+| 4 | Nigeria | Kaduna |
+| 5 | Nigeria | Kano |
+| 6 | Togo | Kara |
+
+These capital classifications reproduce the highlighting used in the chart and follow the Table 5 Capitals sheet and the essay’s existing coding. Administrative capitals and commercial capitals may belong to either the CS4 or the NE5.
+
 ### 2. Matching administrative units
 
 Table 5 unit names are matched to the `admin_1` field in HarvestStat Africa. Exact matches are used where available. An explicit crosswalk handles differences such as:
@@ -145,6 +263,13 @@ Units are ordered from the lowest to the highest acreage-weighted yield. The cha
 - yellow for administrative- and commercial-capital units.
 
 Administrative and commercial capitals are differentiated by their bar outlines. A dagger marks units reporting fewer than all five basket crops, while a double dagger marks the partial Inchiri match.
+
+
+### Chart preview
+
+![Average yield of the Sahvara’s five largest crops by harvested area](sahvara_average_agricultural_yield.png)
+
+*Acreage-weighted yield across each unit’s latest five available HarvestStat years; units ordered low to high. Red = CS4; blue = NE5; yellow/gold = capital-city units (hatched = administrative, dotted = commercial).*
 
 ## Outputs
 
